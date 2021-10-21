@@ -9,7 +9,7 @@ let Login = (props) => {
   const history = useHistory();
 
   let _checkCredentials = (form_email, form_password) => {
-    fetch('http://localhost:3001/api/login', {
+    fetch('https://express-login-demo-app.herokuapp.com/api/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
