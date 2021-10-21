@@ -19,7 +19,7 @@ const Register = () => {
     setRegisterError('');
     console.log(e.target)
 
-    fetch('http://localhost:3001/api/register', {
+    fetch('https://express-login-demo-app.herokuapp.com/api/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
